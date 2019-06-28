@@ -8,9 +8,13 @@
 更新する際に変更するのは以下です。
 
 * index.htmlの.news内の</table>直前に挿入
-```html:sample
-   <div class="radioWave">
-      <p>迷いの中あてなく見上げた空彩る星たちが</p>
-      <p>嘘みたいに晴れた朝に繋がることを教えてくれた</p>
-   </div>
+```html
+<table>
+   ...
+   <!-- 以下が追記する内容 -->
+   <tr>
+      <td>日付</td>
+      <td>お知らせ内容</td>
+   </tr>
+</table>
 ```
