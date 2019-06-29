@@ -77,35 +77,60 @@
 ```
 * record.htmlの</tbody>直前に以下を追加
 ```html
-<tr class="年度試合名 名前のローマ字表記 種目 長水路短水路">
-   <!-- 
-         年度試合名は2019rikousenのように続けて書いてください
-         試合名は以下に従うこと。
-         春季　　　: shunki
-         理工選　　: rikousen
-         東部　　　: toubu
-         夏季　　　: kaki
-         シード校　: seed
-         関カレ　　: kankare
-         ウィンター: winter
-         冬季　　　: touki
+   ...
+   <!-- 個人種目のフォーマット -->
+   <tr class="年度試合名 名前のローマ字表記 種目 長水路短水路">
+      <!-- 
+            年度試合名は2019rikousenのように続けて書いてください
+            試合名は以下に従うこと。
+            春季　　　: shunki
+            理工選　　: rikousen
+            東部　　　: toubu
+            夏季　　　: kaki
+            シード校　: seed
+            関カレ　　: kankare
+            ウィンター: winter
+            冬季　　　: touki
 
-         名前のローマ字表記はmember.htmlで#以降と同じにしてください
+            名前のローマ字表記はmember.htmlで#以降と同じにしてください
 
-         種目は50Frのように書いてください。
-         種目はFr, Ba, Br, Fly, IM, FR, MRのいずれか
+            種目は50Frのように書いてください。
+            種目はFr(自由形),Ba(背泳ぎ),Br(平泳ぎ),Fly(バタフライ),IM(個人メドレー),FR(フリーリレー),MR(メドレーリレー)のいずれか
 
-         長水路ならlong、短水路ならshortとしてください
-   -->
-<td>内藤</td>
-<td>悠貴</td>
-<td>400IM</td>
-<td>4:39.14</td>
-<td>短水路</td>
-<td>ウィンター</td>
-<td>2017</td>
-<td>相模原</td>
-</tr>
-<!--  -->
-<!--  -->
+            長水路ならlong、短水路ならshortとしてください
+      -->
+
+      <td>姓</td>
+      <td>名</td>
+      <td>種目</td>
+      <td>タイム</td>
+      <td>長水路短水路</td>
+      <td>試合名</td>
+      <td>開催年</td>
+      <td>会場</td>
+   </tr>
+   <!-- 開催名、会場はすでに公開されているHPを参考にしてください -->
+   <!-- リレー種目のフォーマット -->
+   <tr class="年度試合名 長水路短水路">
+      <td>第一泳者の姓</td>
+      <td>名</td>
+      <td rowspan="4">種目</td>
+      <td rowspan="4">タイム</td>
+      <td rowspan="4">長水路短水路</td>
+      <td rowspan="4">試合名</td>
+      <td rowspan="4">開催年</td>
+      <td rowspan="4">会場</td>
+   </tr>
+   <tr class="年度試合名(上と同じ)">
+      <td>第二泳者の姓</td>
+      <td>名</td>
+   </tr>
+   <tr class="年度試合名(上と同じ)">
+      <td>第三泳者の姓</td>
+      <td>名</td>
+   </tr>
+   <tr class="年度試合名(上と同じ)">
+      <td>第四泳者の姓</td>
+      <td>名</td>
+   </tr>
 ```
