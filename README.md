@@ -7,7 +7,7 @@
 
 更新する際に変更するのは以下です。
 
-* index.htmlの.news内の</table>直前に挿入
+* index.htmlの.news内の</table>直前に挿入。試合日程とか部活の用事とか。
 ```html
 <table>
    ...
@@ -19,13 +19,15 @@
 </table>
 ```
 * about.htmlの記事の中の部員の人数の変更
+* result.htmlの
 * member.htmlの.members内の部員の学年の変更、新入生の追加。`<li><a href="#tamaki-asahi">玉城旭</a></li>`のaタグの#以降とaタグの中身は対応させてください。
 * member.htmlの.member内の<div class="memvber">直後の引退した4年生の記事の削除。対応する</div>直前に新入生の記事の挿入。
 ```html
 <div class="member">
    ...
    <!-- 以下が削除・追加する内容のフォーマット -->
-   <h3 class="name" id="名前のローマ字。姓名は-でつなげる。">名前</h3>
+   <h3 class="name" id="aタグの#以降と同じ値">名前</h3>
+   <!-- 玉城旭の例では<h3 class="name" id="tamaki-asahi">玉城旭</h3> -->   
    <div class="flex-box-member2">
       <img src="表示する画像のURL" alt="" width="200" height="200">
       <table>
@@ -39,7 +41,7 @@
          </tr>
          <tr>
            <th>S1</th>
-           <td></td>
+           <td>得意種目</td>
          </tr>
          <tr>
            <th>Pos.</th>
@@ -54,3 +56,4 @@
    ...
 </div>
 ```
+* 
